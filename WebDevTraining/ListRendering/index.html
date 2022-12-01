@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar VueJS</title>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <style>
+            .box {
+                padding: 100px 0;
+                width: 400px;
+                text-align: center;
+                background: grey;
+                margin: 20px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        Hello
+        <div id="app">
+            <ul>
+                <li v-for="book in books">
+                    <p>{{ book.title }} - {{ book.author }}</p>
+
+                </li>
+            </ul>
+            <button @click="changeShow">
+                <span v-if="show">Hide</span>
+                <span v-else>Show</span>
+            </button
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
